@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games 6X - Play Free Games Online | unblockedgames6x.club</title>
+    <meta name="description" content="Play the best Unblocked Games 6X online for free at school or work. Enjoy hundreds of HTML5 games with no downloads required. Fast, safe, and always accessible.">
+    <meta name="keywords" content="unblocked games 6x, free games, school games, html5 games, online games, browser games">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+        }
+
+        .cta-button:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,107,107,0.4);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+
+        .content-section h3 {
+            color: #555;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Games Section */
+        .games-section {
+            padding: 4rem 0;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .game-info {
+            padding: 1.5rem;
+        }
+
+        .game-title {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .game-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-section {
+                padding: 2rem;
+            }
+        }
+
+        /* Page styles for internal pages */
+        .page-content {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            min-height: 60vh;
+        }
+
+        .page-content h1 {
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .page-content h2 {
+            color: #555;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="javascript:void(0)" onclick="showPage('home')" class="logo">Unblocked Games 6X</a>
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unblocked Games 6X</h1>
+                <p>Play the best free HTML5 games online at school, work, or anywhere. No downloads, no restrictions, just pure gaming fun!</p>
+                <a href="javascript:void(0)" onclick="showPage('home', 'games')" class="cta-button">Start Playing Now</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="content-section">
+                <h2>Welcome to Unblocked Games 6X - Your Ultimate Gaming Destination</h2>
+                
+                <p>Discover the most comprehensive collection of <strong>Unblocked Games 6X</strong> available online today. Our platform provides instant access to hundreds of high-quality HTML5 games that work perfectly on any device, anywhere, anytime. Whether you're at school, work, or home, our games are designed to bypass network restrictions while delivering exceptional entertainment value.</p>
+
+                <h3>What Makes Unblocked Games 6X Special?</h3>
+                <p>Unblocked Games 6X represents the evolution of browser-based gaming. Unlike traditional gaming platforms that require downloads or installations, our games run directly in your web browser using cutting-edge HTML5 technology. This means faster loading times, better performance, and seamless compatibility across all devices and operating systems.</p>
+
+                <p>Our carefully curated selection includes action-packed adventures, mind-bending puzzles, competitive sports games, strategic challenges, and classic arcade experiences. Every game on our platform has been tested to ensure it works flawlessly on restricted networks, making it the perfect solution for students and professionals seeking quick entertainment during breaks.</p>
+
+                <h3>Why Choose Our Platform?</h3>
+                <p>The gaming landscape has evolved significantly, and <strong>Unblocked Games 6X</strong> stands at the forefront of this revolution. Our platform offers several key advantages that set us apart from other gaming websites:</p>
+
+                <p><strong>Lightning-Fast Performance:</strong> Our games are optimized for speed and efficiency. Using advanced HTML5 technology and content delivery networks, we ensure that games load quickly and run smoothly, even on slower internet connections or older devices.</p>
+
+                <p><strong>Universal Compatibility:</strong> Every game in our collection works seamlessly across different browsers, operating systems, and devices. Whether you're using Chrome, Firefox, Safari, or Edge on Windows, Mac, or mobile devices, you'll enjoy consistent performance.</p>
+
+                <p><strong>No Downloads Required:</strong> Forget about lengthy installations or storage concerns. All our games run directly in your browser, saving valuable disk space and eliminating security concerns associated with downloaded software.</p>
+
+                <p><strong>Safe and Secure:</strong> We prioritize user safety and privacy. Our games are hosted on secure servers, and we never collect personal information or require account registration. Play with confidence knowing your privacy is protected.</p>
+
+                <h3>The Science Behind Unblocked Gaming</h3>
+                <p>Understanding how <strong>Unblocked Games 6X</strong> works helps explain why our platform is so effective at bypassing network restrictions. Traditional gaming websites often use specific ports, protocols, or domain structures that network administrators easily identify and block. Our platform employs sophisticated routing techniques and alternative hosting methods that make our games appear as regular web content to filtering systems.</p>
+
+                <p>This technical approach doesn't compromise game quality or performance. Instead, it ensures that students and workers can access entertainment during appropriate break times without violating network policies or causing system disruptions.</p>
+
+                <h3>Educational Benefits of Gaming</h3>
+                <p>Research consistently shows that strategic gaming can improve cognitive function, problem-solving skills, and stress management. <strong>Unblocked Games 6X</strong> includes numerous educational games that combine entertainment with learning, making it an excellent resource for both relaxation and skill development.</p>
+
+                <p>Our puzzle games enhance logical thinking and pattern recognition. Strategy games improve planning and decision-making abilities. Action games can boost reaction times and hand-eye coordination. By providing access to diverse gaming experiences, we support both entertainment and personal development.</p>
+
+                <h3>Gaming Responsibly</h3>
+                <p>While <strong>Unblocked Games 6X</strong> provides easy access to entertainment, we encourage responsible gaming practices. Our platform is designed for quick, enjoyable breaks rather than extended gaming sessions. We recommend using games as rewards for completed tasks or stress relief during appropriate downtime.</p>
+
+                <p>Remember to respect your school or workplace policies regarding internet usage. Gaming should enhance your productivity and well-being, not interfere with your primary responsibilities. Our quick-loading games are perfect for brief mental breaks that can actually improve focus and performance when you return to work or study.</p>
+
+                <h3>The Future of Browser Gaming</h3>
+                <p>The gaming industry continues to evolve, and <strong>Unblocked Games 6X</strong> evolves with it. We're constantly adding new games, improving performance, and exploring emerging technologies like WebGL and Progressive Web Apps to enhance the gaming experience.</p>
+
+                <p>Our commitment to accessibility means we'll continue developing solutions that work across different network environments while maintaining the highest standards of quality and security. As HTML5 technology advances, we're excited to bring even more sophisticated gaming experiences to our users.</p>
+
+                <p>Join millions of players who have discovered the convenience and excitement of <strong>Unblocked Games 6X</strong>. Start exploring our collection today and experience the future of accessible, high-quality browser gaming. No matter where you are or what device you're using, your next gaming adventure is just a click away.</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized HTML5 games that load instantly and run smoothly on any device or network connection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>Always Accessible</h3>
+                    <p>Bypass network restrictions with our advanced routing technology. Play anywhere, anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Huge Game Library</h3>
+                    <p>Hundreds of carefully curated games across all genres. New games added regularly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safe & Secure</h3>
+                    <p>No downloads, no personal information required. Play with complete privacy and security.</p>
+                </div>
+            </section>
+        </div>
+
+        <section id="games" class="games-section">
+            <div class="container">
+                <h2 style="text-align: center; color: #667eea; margin-bottom: 2rem;">Featured Unblocked Games</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <iframe src="https://html5.gamedistribution.com/e4834283bce2457980b6cb1da52c1430/?gd_sdk_referrer_url=https://www.unblockedgames6x.club/games/game1"></iframe>
+                        <div class="game-info">
+                            <h3 class="game-title">Adventure Quest</h3>
+                            <p class="game-description">Embark on an epic journey through mysterious lands filled with challenges and treasures.</p>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <iframe src="https://html5.gamedistribution.com/202557c3e71e430d8c81881208900488/?gd_sdk_referrer_url=https://www.unblockedgames6x.club/games/game2"></iframe>
+                        <div class="game-info">
+                            <h3 class="game-title">Racing Thunder</h3>
+                            <p class="game-description">Experience high-speed racing action with stunning graphics and realistic physics.</p>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <iframe src="https://html5.gamedistribution.com/2ede434f41c84f8d89cc809f4b79ce32/?gd_sdk_referrer_url=https://www.unblockedgames6x.club/games/game3"></iframe>
+                        <div class="game-info">
+                            <h3 class="game-title">Strategy Empire</h3>
+                            <p class="game-description">Build your empire, manage resources, and conquer territories in this strategic masterpiece.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Unblocked Games 6X</h3>
+                    <p>The ultimate destination for free HTML5 games that work anywhere. Play hundreds of games instantly without downloads or restrictions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('about')">About Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="showPage('privacy')">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('terms')">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Game Categories</h3>
+                    <ul>
+                        <li><a href="#">Action Games</a></li>
+                        <li><a href="#">Puzzle Games</a></li>
+                        <li><a href="#">Racing Games</a></li>
+                        <li><a href="#">Strategy Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 unblockedgames6x.club. All rights reserved. | Play responsibly and respect your network policies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Us Page -->
+    <div id="about-page" style="display: none;">
+        <header>
+            <nav>
+                <a href="javascript:void(0)" onclick="showPage('home')" class="logo">Unblocked Games 6X</a>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="page-content">
+                <h1>About Unblocked Games 6X</h1>
+                <p>Welcome to Unblocked Games 6X, the premier destination for free, accessible HTML5 gaming. Our platform was created with a simple mission: to provide high-quality gaming experiences that work anywhere, anytime, without restrictions.</p>
+                
+                <h2>Our Story</h2>
+                <p>Founded by passionate gamers and web developers, Unblocked Games 6X emerged from the frustration of trying to access games on restricted networks. We recognized that students and workers needed quick, stress-relieving entertainment during breaks, but traditional gaming sites were often blocked by network administrators.</p>
+                
+                <h2>Our Mission</h2>
+                <p>We believe that access to entertainment shouldn't be limited by network restrictions. Our platform uses cutting-edge technology to ensure that our games remain accessible while respecting the intended purposes of educational and workplace networks.</p>
+                
+                <h2>Why We're Different</h2>
+                <p>Unlike other gaming platforms, we focus exclusively on HTML5 games that require no downloads or installations. Every game in our collection is carefully tested to ensure compatibility across different browsers, devices, and network configurations.</p>
+                
+                <h2>Our Commitment</h2>
+                <p>We're committed to providing a safe, secure, and enjoyable gaming environment. We never collect personal information, display intrusive advertising, or require account registration. Your privacy and security are our top priorities.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Unblocked Games 6X</h3>
+                        <p>The ultimate destination for free HTML5 games that work anywhere.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 unblockedgames6x.club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div id="contact-page" style="display: none;">
+        <header>
+            <nav>
+                <a href="javascript:void(0)" onclick="showPage('home')" class="logo">Unblocked Games 6X</a>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="page-content">
+                <h1>Contact Us</h1>
+                <p>We value your feedback and are here to help with any questions or concerns you may have about Unblocked Games 6X.</p>
+                
+                <h2>Get in Touch</h2>
+                <p>For general inquiries, technical support, or game suggestions, please reach out to us through the following channels:</p>
+                
+                <p><strong>Email:</strong> support@unblockedgames6x.club</p>
+                <p><strong>Response Time:</strong> We typically respond to all inquiries within 24-48 hours.</p>
+                
+                <h2>Feedback and Suggestions</h2>
+                <p>We're always looking to improve our platform and add new games. If you have suggestions for games you'd like to see on our platform, or if you've encountered any technical issues, please don't hesitate to contact us.</p>
+                
+                <h2>Game Developers</h2>
+                <p>If you're a game developer interested in featuring your HTML5 games on our platform, we'd love to hear from you. Please include details about your game, including a playable demo if available.</p>
+                
+                <h2>Technical Support</h2>
+                <p>Experiencing issues with our games? Please provide the following information when contacting us:</p>
+                <ul>
+                    <li>Your browser and version</li>
+                    <li>Your operating system</li>
+                    <li>The specific game you're having trouble with</li>
+                    <li>A detailed description of the issue</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Unblocked Games 6X</h3>
+                        <p>The ultimate destination for free HTML5 games that work anywhere.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 unblockedgames6x.club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div id="privacy-page" style="display: none;">
+        <header>
+            <nav>
+                <a href="javascript:void(0)" onclick="showPage('home')" class="logo">Unblocked Games 6X</a>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="page-content">
+                <h1>Privacy Policy</h1>
+                <p><strong>Last Updated:</strong> December 2024</p>
+                
+                <h2>Information We Collect</h2>
+                <p>At Unblocked Games 6X, we are committed to protecting your privacy. We do not collect, store, or process any personal information from our users. Our games run entirely in your browser without requiring registration or personal data.</p>
+                
+                <h2>Cookies and Local Storage</h2>
+                <p>Our website may use cookies and local storage to enhance your gaming experience by remembering your preferences and game progress. This information is stored locally on your device and is not transmitted to our servers.</p>
+                
+                <h2>Third-Party Services</h2>
+                <p>Some of our games are provided by third-party developers. These games may have their own privacy policies and data collection practices. We encourage you to review the privacy policies of any third-party games you play.</p>
+                
+                <h2>Analytics</h2>
+                <p>We may use anonymous analytics tools to understand how our website is used, such as which games are most popular. This data is aggregated and does not identify individual users.</p>
+                
+                <h2>Children's Privacy</h2>
+                <p>Our website is suitable for all ages, and we do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+                
+                <h2>Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+                
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this privacy policy, please contact us at support@unblockedgames6x.club.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Unblocked Games 6X</h3>
+                        <p>The ultimate destination for free HTML5 games that work anywhere.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 unblockedgames6x.club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Terms of Use Page -->
+    <div id="terms-page" style="display: none;">
+        <header>
+            <nav>
+                <a href="javascript:void(0)" onclick="showPage('home')" class="logo">Unblocked Games 6X</a>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('home', 'games')">Unblocked Games</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="page-content">
+                <h1>Terms of Use</h1>
+                <p><strong>Last Updated:</strong> December 2024</p>
+                
+                <h2>Acceptance of Terms</h2>
+                <p>By accessing and using Unblocked Games 6X, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our website.</p>
+                
+                <h2>Use of the Service</h2>
+                <p>Our website is provided for entertainment purposes only. You may use our games for personal, non-commercial purposes in accordance with these terms and applicable laws.</p>
+                
+                <h2>Prohibited Uses</h2>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use our website for any illegal or unauthorized purpose</li>
+                    <li>Attempt to gain unauthorized access to our servers or networks</li>
+                    <li>Interfere with or disrupt our website or servers</li>
+                    <li>Use our website in a way that violates your school or workplace policies</li>
+                </ul>
+                
+                <h2>Intellectual Property</h2>
+                <p>All games and content on our website are the property of their respective owners. We do not claim ownership of third-party games and respect all intellectual property rights.</p>
+                
+                <h2>Disclaimer</h2>
+                <p>Our website and games are provided "as is" without warranties of any kind. We do not guarantee that our service will be uninterrupted or error-free.</p>
+                
+                <h2>Limitation of Liability</h2>
+                <p>In no event shall Unblocked Games 6X be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website.</p>
+                
+                <h2>Responsible Gaming</h2>
+                <p>We encourage responsible gaming practices. Please respect your network policies.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Unblocked Games 6X</h3>
+                        <p>The ultimate destination for free HTML5 games that work anywhere.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 unblockedgames6x.club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function showPage(pageId, anchor) {
+            const mainHeader = document.querySelector('body > header');
+            const mainContent = document.getElementById('home');
+            const gamesSection = document.getElementById('games');
+            const mainFooter = document.querySelector('body > footer');
+
+            // Hide all pages and main sections first
+            mainHeader.style.display = 'none';
+            mainContent.style.display = 'none';
+            gamesSection.style.display = 'none';
+            mainFooter.style.display = 'none';
+            document.getElementById('about-page').style.display = 'none';
+            document.getElementById('contact-page').style.display = 'none';
+            document.getElementById('privacy-page').style.display = 'none';
+            document.getElementById('terms-page').style.display = 'none';
+
+            // Show the correct page/content
+            if (pageId === 'home') {
+                mainHeader.style.display = 'block';
+                mainContent.style.display = 'block';
+                gamesSection.style.display = 'block';
+                mainFooter.style.display = 'block';
+
+                if (anchor) {
+                    setTimeout(() => {
+                        const element = document.getElementById(anchor);
+                        if(element) element.scrollIntoView({ behavior: 'smooth' });
+                    }, 0);
+                } else {
+                    window.scrollTo(0, 0);
+                }
+            } else {
+                const pageToShow = document.getElementById(pageId + '-page');
+                if (pageToShow) {
+                    pageToShow.style.display = 'block';
+                    window.scrollTo(0, 0);
+                } else {
+                    // Fallback to home if page not found
+                    showPage('home');
+                }
+            }
+        }
+
+        // Handle initial page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            const validPages = ['about', 'contact', 'privacy', 'terms'];
+            if (validPages.includes(hash)) {
+                showPage(hash);
+            } else {
+                showPage('home');
+            }
+        });
+    </script>
+</body>
+</html>
